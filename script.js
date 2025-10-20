@@ -55,15 +55,11 @@ function mutation(cromossome) {
 }
 
 function crossover(cromossomeA, cromossomeB) {
-  //implemente seu algoritmo de crossover aqui
-  return [];
+  //implemente seu algoritmo de crossover aqui  return [];
 }
 
 function calculateEuclidianDistanceToRGB(rgb1, rgb2) {
-  const rDiff = rgb1[0] - rgb2[0]
-  const gDiff = rgb1[1] - rgb2[1]
-  const bDiff = rgb1[2] - rgb2[2]
-  return Math.sqrt((rDiff ** 2)+(gDiff ** 2)+(bDiff ** 2))
+  //Implemente aqui o calculo da distância euclideana
 }
 
 function findQuadrant(vh, vw) {
