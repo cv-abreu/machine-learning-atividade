@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>GA</title>
+</head>
+<body>
+  <div class="display">
+    <p class="geracoes"></p>
+    <p class="qt-ind"></p>
+  </div>
+  
+  <div class="box a"></div>
+  <div class="box b"></div>
+  <div class="box c"></div>
+  <div class="box d"></div>
+  <footer>
+    <section>
+      <label for="ngem">Number of Generations</label>
+      <input class="ngem" type="number">
+    </section>
+    <section>
+      <label for="ps">Population Size</label>
+      <input class="ps" type="number">
+    </section>
+    <section>
+      <label for="mr">Mutation rate</label>
+      <input class="mr" type="number">
+    </section>
+    <section>
+      <label for="cr">Crossover rate</label>
+      <input class="cr" type="number">
+    </section>
+    <section>
+      <label for="sp">Speed (ms)</label>
+      <input class="speed" type="number">
+    </section>
+    <input class="run-btn" type="button" value="Run">
+    
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>

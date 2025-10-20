@@ -1,0 +1,79 @@
+:root {
+  --ball-len: 2.5rem
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  min-width: 50vw;
+  min-height: 50vh ;
+}
+
+.a {
+  background-color:rgb(250, 186, 109);
+}
+
+.b {
+  background-color: rgb(67, 140, 151);
+}
+
+.c {
+  background-color: rgb(136, 214, 116);
+}
+
+.d {
+  background-color: rgb(246, 139, 230);
+}
+
+.ball {
+  width: var(--ball-len);
+  height: var(--ball-len);
+  border-radius: var(--ball-len);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #fff 2px solid;
+  color: #fff;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 2rem;
+  width: 100vw;
+  background-color: #525252;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #FFF;
+}
+
+.run-btn {
+  height: 2rem;
+  background-color: rgb(19, 172, 121);
+  color: #FFF;
+  font-weight: bolder;
+  padding: 0 2rem;
+} 
+
+.display{
+  position: fixed;
+  top: 0.1rem;
+  right: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #FFF;
+}
