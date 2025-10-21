@@ -25,7 +25,7 @@ body {
 }
 
 .b {
-  background-color: rgb(67, 140, 151);
+  background-color: rgb(20, 207, 245);
 }
 
 .c {
@@ -43,7 +43,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: #fff 2px solid;
+  border: #000 2px solid;
   color: #fff;
 }
 
