@@ -74,6 +74,7 @@ function show(population) {
 
 function mutation(cromossome) {
   let [_, h, w, r, g, b] = cromossome
+  
   //Implemente aqui seu algoritmo de mutação...
   return [0, h, w, ...newRGB]
 }
