@@ -90,11 +90,15 @@ function crossover(cromossomeA, cromossomeB) {
   const [fitA, hA, wA, rA, gA, bA] = cromossomeA;
   const [fitB, hB, wB, rB, gB, bB] = cromossomeB;
 
-  // Implemente aqui seu algoritmo de crossover
+  // Crossover Aritmético: o filho é a média dos pais
+  const h = (hA + hB) / 2;
+  const w = (wA + wB) / 2;
+  const r = Math.round((rA + rB) / 2);
+  const g = Math.round((gA + gB) / 2);
+  const b = Math.round((bA + bB) / 2);
 
   return [0, h, w, r, g, b];
 }
-
 function calculateEuclidianDistanceToRGB(rgb1, rgb2) {
   const rDiff = rgb1[0] - rgb2[0]
   const gDiff = rgb1[1] - rgb2[1]
