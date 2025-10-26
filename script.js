@@ -75,7 +75,7 @@ function show(population) {
 function mutation(cromossome) {
   let [_, h, w, r, g, b] = cromossome
 
-  let mutationRate = 0.2
+  let mutationRate = 0.02
 
   let newRGB = [
     Math.random() < mutationRate ? Math.floor(Math.random()* 256) :r,
