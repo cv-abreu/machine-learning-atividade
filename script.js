@@ -184,7 +184,7 @@ runBtn.addEventListener('click', async () => {
   const POP_SIZE = parseInt(document.querySelector('.ps')?.value) || 600
   const MUT_RATE = parseFloat(document.querySelector('.mr')?.value) || 0.02
   const CROSS_RATE = parseFloat(document.querySelector('.cr')?.value) || 0.05
-  const SPEED = parseFloat(document.querySelector('.speed'))?.value || 20
+  const SPEED = parseFloat(document.querySelector('.speed')?.value) || 20
   
   let population = generateInicialPopulation(POP_SIZE)
   for(const individual of population ) {
