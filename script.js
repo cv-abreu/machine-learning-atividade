@@ -72,17 +72,16 @@ function show(population) {
   })
 }
 
-function mutation(cromossome) {
+function mutation(cromossome, MUT_RATE) {
   let [_, h, w, r, g, b] = cromossome
 
-  let mutationRate = 0.02
-
+  //Mutação: Probabilidade de mutação nos componentes do RGB.
   let newRGB = [
-    Math.random() < mutationRate ? Math.floor(Math.random()* 256) :r,
-    Math.random() < mutationRate ? Math.floor(Math.random()* 256) :g,
-    Math.random() < mutationRate ? Math.floor(Math.random()* 256) :b
+    Math.random() < MUT_RATE ? Math.floor(Math.random()* 256) :r,
+    Math.random() < MUT_RATE ? Math.floor(Math.random()* 256) :g,
+    Math.random() < MUT_RATE ? Math.floor(Math.random()* 256) :b
   ]
-  //Implemente aqui seu algoritmo de mutação...
+  
   return [0, h, w, ...newRGB]
 }
 
